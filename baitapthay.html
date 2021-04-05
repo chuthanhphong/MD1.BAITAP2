@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <form>
+       <fieldset style="margin-top: 50px" >
+           <table width="50%">
+               <tr>
+                   <td width="30%"> <label for="hoten" > Họ tên </label> </td>
+                   <td> <input style="width: 500px; height:20px" type="text" id="hoten" required/> </td>
+               </tr>
+               <tr>
+                   <td> <label for="sdt"> Điện thoại di động </label></td>
+                   <td> <input style="width: 500px; height: 20px" type="number" id="sdt" required/> </td>
+               </tr>
+               <tr>
+                   <td> <label for="city"> Thành phố </label></td>
+                   <td>
+                       <Select style="width: 508px; height: 29px" name="Tỉnh/Thành phố" id="city">
+                           <option value="Hà Nội"> Hà Nội</option>
+                           <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                           <option value="Đà Nẵng"> Đà Nẵng</option>
+                       </Select>
+                   </td>
+               </tr>
+               <td> <label for="District">Quận/Huyện </label></td>
+               <td>
+                   <Select style="width: 508px; height: 29px" name="Quận/huyện" id="District">
+                       <option value="Đống Đa">Đống Đa</option>
+                       <option value="Quận 1">Quận 1</option>
+                       <option value="Phước Hòa">Phước Hòa</option>
+                   </Select> </td>
+               </tr>
+               <tr>
+                   <td><label for="Ward">Phường/Xã</label> </td>
+                   <td> <select style="width: 508px;height: 29px" name="Phường/Xã" id="Ward"><br/>
+                       <option value="Láng Hạ">Láng hạ </option>
+                       <option value="Hữu Hòa">Hữu Hòa </option>
+                   </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td rowspan="2"> <label for="add"> Địa chỉ </label> </td>
+                   <td> <textarea cols="67" row="20" id="add" required> </textarea> </td>
+               </tr>
+               <tr>
+                   <td> Để nhận hàng thuận tiện hơn, bạn vui lòng cho Tiki biết loại địa chỉ </td>
+               </tr>
+               <tr>
+                   <td rowspan="2">
+                       Loại địa chỉ
+                   </td>
+                   <td><input type="radio" name="dc"/>Nhà riêng/Chung cư
+                       <input type="radio" name="dc"/>Cơ Quan/ Công ty
+                   </td>
+               </tr>
+               <tr>
+                   <td><input type="checkbox" name="Loại địa chỉ" value="Sử dụng địa chỉ này làm mặc định"/>Sử dụng địa chỉ này làm mặc định</td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td> <button> Hủy Bỏ </button> <button>Cập Nhật</button> </td>
+               </tr>
+               </lable>
+       </fieldset>
+   </form>
+
+</body>
+</html>
